@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rajdhani:wght@400;500;700&display=swap');
+
+:root {
+  --text-normal: 'Anton', sans-serif;
+  --text-heading: 'Rajdhani', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--text-normal);
+}
+label {
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  padding: 40px 0;
+}
+.header__container {
+  width: 100%;
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+.text {
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.title {
+  font-family: var(--text-heading);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.title-description {
+  font-family: var(--text-normal);
+  font-size: 1rem;
+}
+
+main::before {
+  position:fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background: url(image/backgorund.jpg) no-repeat center;
+  background-size: cover;
+  z-index: -1;
+}
+
+main::after {
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 255, .7);
+  z-index: -1;
+}
+main {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+.main__container {
+  width: 100%;
+  max-width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, .7);
+  border-radius: 3px;
+}
+
+#survey-form {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+label {
+  color: white;
+  letter-spacing: 1.5px;
+}
+button,
+input,
+select {
+  width: 100%;
+  height: 30px;
+  display: block;
+  margin: 10px 0 15px;
+  font-family: inherit;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  background: linear-gradient(rgba(95, 255, 207,.75), rgb(137, 222, 255), rgba(95, 255, 207,.75));
+  box-shadow: 0 2px 30px rgba(95, 255, 207, 0.582);
+  color: rgb(2, 2, 114);
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+input::placeholder {
+  color: rgb(68, 1, 94);
+}
+
+.text.bn {
+  text-align: start;
+}
+.formBx:nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+}
+.formBx:nth-child(5) label {
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 35px;
+}
+input[type="checkbox"],
+input[type="radio" ] {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: none;
+}
+
+.formBx:nth-child(6) {
+  display: flex;
+  flex-direction: column;
+}
+.formBx:nth-child(6) label {
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+input[type="checkbox"] {
+  border-radius: 0;
+  margin: 10px;
+}
+input[type="checkbox"]:checked {
+  box-shadow: 0 2px 30px rgba(95, 255, 207, 0.582);
+  
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0 15px;
+  padding: 5px 0 5px 10px; 
+  resize: none;
+  outline: none;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  font-weight: 500;
+  font-family: var(--text-heading);
+  letter-spacing: 1px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

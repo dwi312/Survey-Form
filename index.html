@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>FCC | Survey Form</title>
+</head>
+<body>
+  <header>
+    <div class="header__container">
+      <h1 class="text title" id="title">Survey Aplikasi Kesehatan</h1>
+      <p class="text title-description" id="description">Terima kasih telah meluangkan waktu untuk membantu kami meningkatkan platform</p>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="main__container">
+      <form id="survey-form">
+        <div class="formBx">
+          <label for="name" id="name-label">
+            Nama :
+            <input type="text" id="name" placeholder="Silahkan masukan nama anda" required>
+          </label>
+        </div>
+
+        <div class="formBx">
+          <label for="email" id="email-label">
+            Email :
+            <input type="email" id="email" placeholder="Silahkan masukan email anda" required>
+          </label>
+        </div>
+        
+        <div class="formBx">
+          <label for="number" id="number-label">
+            Usia :
+            <input type="number" id="number" min="15" max="35" placeholder="Berapa usia anda" required>
+          </label>
+        </div>
+        
+        <div class="formBx">
+          <p class="text bn">Opsi mana yang paling menggambarkan profesi Anda saat ini?</p>
+          <select name="profesi" class="profesi" id="dropdown" required>
+            <option value="pelajar">Pelajar</option>
+            <option value="karyawan">Karyawan</option>
+            <option value="pengusaha">Pengusaha</option>
+            <option value="dll">Lain-lain</option>
+          </select>
+        </div>
+        
+        <div class="formBx">
+          <p class="text bn">Apakah Aplikasi Kesehatan membantu anda dalam kehidupan sehari-hari anda ?</p>
+
+          <label>
+            <input type="radio" name="radio-btn" value="1" class="radio-btn">
+            Iya
+          </label>
+          
+          <label>
+            <input type="radio" name="radio-btn" value="2" class="radio-btn">
+            Tidak sama sekali
+          </label>
+        </div>
+        <div class="formBx">
+          <p class="text bn">Apa fitur favorit anda di Aplikasi Kesehatan</p>
+
+          <label for="tensi">
+            <input id="tensi" type="checkbox" value="tensi" class="tensi-cb">
+            Tensi Darah
+          </label>
+          
+          <label for="gula-darah">
+            <input id="gula-darah" type="checkbox" value="gula-darah" class="gula-darah-cb">
+            Kadar Gula Darah
+          </label>
+
+          <label for="kolestrol-darah">
+            <input id="kolestrol-darah" type="checkbox" value="kolestrol-darah" class="kolestrol-darah-cb">
+            Kadar Kolestrol Darah
+          </label>
+
+          <label for="asam_urat-darah">
+            <input id="asam_urat-darah" type="checkbox" value="asam_urat-darah" class="asam_urat-darah-cb">
+            Kadar Asam Urat Darah
+          </label>
+
+        </div>
+
+        <div class="formBx">
+          <p class="text bn">Apa komentar anda mengenai aplikasi kesehatan dan apa saran anda</p>
+
+          <textarea name="comments" id="comments" cols="10" rows="10" placeholder="Tuliskan komentar anda disini.."></textarea>
+        </div>
+
+        <div class="formBx">
+          <button type="submit" id="submit" class="submit-bnt">Submit</button>
+        </div>
+
+      </form>
+
+    </div>
+  </main>
+    
+    
+
+
+
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+      
+</body>
+</html>
